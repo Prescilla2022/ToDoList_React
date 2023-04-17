@@ -1,7 +1,7 @@
 {
   "name": "reactusestatetask",
   "version": "0.1.0",
-  "homepage": "https://Prescilla2022.github.io/ToDoList_React",
+  "homepage": "https://todo-back-p4uy.onrender.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
