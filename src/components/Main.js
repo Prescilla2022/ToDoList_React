@@ -24,7 +24,7 @@ export default function Main() {
   async function displayItem() {
     let todoarray = [];
 
-    const url = "http://localhost:5000/show";
+    const url = "https://todo-back-p4uy.onrender.com/show";
     const requestOptions = {
       method: "POST",
 
@@ -50,7 +50,7 @@ export default function Main() {
     showList(todoarray);
   }
   async function addItem() {
-    const url = "http://localhost:5000/add";
+    const url = "https://todo-back-p4uy.onrender.com/add";
     const requestOptions = {
       method: "POST",
 
@@ -98,7 +98,7 @@ export default function Main() {
 
   async function clearList() {
     const todoarray = [];
-    const url = "http://localhost:5000/delete";
+    const url = "https://todo-back-p4uy.onrender.com/delete";
     const requestOptions = {
       method: "POST",
 
@@ -127,7 +127,7 @@ export default function Main() {
 
     //console.log(value);
     const todoarray = [];
-    const url = "http://localhost:5000/deleteOne";
+    const url = "https://todo-back-p4uy.onrender.com/deleteOne";
     const requestOptions = {
       method: "POST",
 
