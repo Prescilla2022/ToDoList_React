@@ -97,7 +97,7 @@ export default function Main() {
       </p>,
     ]);
   } else {
-      document.getElementById("search").placeholder = "* required";
+      document.getElementById("search").focus();
     }
 
 }
