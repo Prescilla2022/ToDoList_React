@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useState,useRef } from "react";
 import Image from "../images/delete.png";
 import ToDoList from "./ToDoList";
 
@@ -8,6 +8,7 @@ export default function Main() {
   const [itemName, setItemName] = useState(null);
   const [toDoList, setToDoList] = useState([""]);
   const [count, setCount] = useState(0);
+    const searchInput = useRef(null);
 
   //function to be called on change in the input field
   function setItem(event) {
@@ -97,7 +98,7 @@ export default function Main() {
       </p>,
     ]);
   } else {
-      document.getElementById("search").focus();
+  document.getElementById("search").focus();
     }
 
 }
@@ -201,6 +202,7 @@ export default function Main() {
               type="search"
               className="inputItem"
               placeholder="Enter Item"
+              ref={searchInput}
               onChange={setItem}
             ></input>
             <button className="main-button" onClick={addItem}>
