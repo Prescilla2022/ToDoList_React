@@ -50,6 +50,7 @@ export default function Main() {
     showList(todoarray);
   }
   async function addItem() {
+     if (itemName !== "" && itemName !== null) {
       
     const url = "https://todo-back-p4uy.onrender.com/add";
     const requestOptions = {
@@ -95,7 +96,9 @@ export default function Main() {
         ></img>
       </p>,
     ]);
-  
+  } else {
+      document.getElementById("search").placeholder = "* required";
+    }
 
 }
 
