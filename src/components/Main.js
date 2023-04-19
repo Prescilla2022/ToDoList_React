@@ -98,7 +98,7 @@ export default function Main() {
       </p>,
     ]);
   } else {
-  document.getElementById("search").focus();
+ searchInput.current.focus();
     }
 
 }
