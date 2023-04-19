@@ -84,7 +84,7 @@ export default function Main() {
           style={{
             height: 20,
             width: 20,
-            marginRight: 10,
+            marginRight: 20,
             marginTop: 4,
             cursor:"pointer"
           }}
@@ -175,6 +175,7 @@ export default function Main() {
                 width: 20,
                 marginRight: 20,
                 marginTop: 4,
+                cursor:"pointer"
               }}
               src={Image}
               alt="Delete icon"
