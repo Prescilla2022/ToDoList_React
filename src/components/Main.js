@@ -109,7 +109,7 @@ export default function Main() {
     const url = "https://todo-back-p4uy.onrender.com/delete";
     const requestOptions = {
       method: "POST",
-
+      mode:"no-cors",
       headers: {
         "Access-Control-Allow-Origin": "*",
         "content-type": "application/json",
