@@ -30,7 +30,7 @@ export default function Main() {
       method: "POST",
 
       headers: {
-       // "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*",
         "content-type": "application/json",
       },
       // body: JSON.stringify({ todo: itemName }),
